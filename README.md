@@ -42,9 +42,13 @@ minikube addons enable ingress
 2️⃣ Deploy All Microservices
 
 kubectl apply -f postgres/
+
 kubectl apply -f redis/
+
 kubectl apply -f vote/
+
 kubectl apply -f result/
+
 kubectl apply -f worker/
 
 3️⃣ Apply Ingress
