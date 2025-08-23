@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: vote
-  name: vote
+  name: voting-app-vote-service
 spec:
   type: NodePort
   selector:

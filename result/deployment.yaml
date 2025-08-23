@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: result
-  name: result
+  name: voting-app-result-deployment
 spec:
   replicas: 1
   selector:
