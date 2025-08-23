@@ -6,9 +6,9 @@ metadata:
   name: db
 spec:
   type: ClusterIP
+  ports:
+    - name: "db-service"
+      port: 5432
+      targetPort: 5432
   selector:
     app: db
-  ports:
-    - port: 5432
-      targetPort: 5432
-      name: "db-service"

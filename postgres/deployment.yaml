@@ -15,16 +15,16 @@ spec:
         app: db
     spec:
       containers:
-        - name: postgres
-          image: postgres:15-alpine
-          ports:
-            - containerPort: 5432
-              name: postgres
+        - image: postgres:15-alpine
+          name: postgres
           env:
             - name: POSTGRES_USER
               value: postgres
             - name: POSTGRES_PASSWORD
               value: postgres
+          ports:
+            - containerPort: 5432
+              name: postgres
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: db-data
