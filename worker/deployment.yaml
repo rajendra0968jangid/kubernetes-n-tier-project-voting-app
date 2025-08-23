@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         app: worker
-      name: voting-app-worker
     spec:
       containers:
         - name: voting-app-worker-container

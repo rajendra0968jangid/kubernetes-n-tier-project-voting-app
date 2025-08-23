@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         app: db
-      name: voting-app-db
     spec:
       containers:
         - name: voting-app-db-container

@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         app: result
-      name: voting-app-result
     spec:
       containers:
         - name: voting-app-result-container
