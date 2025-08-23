@@ -15,7 +15,7 @@ spec:
         app: redis
     spec:
       containers:
-        - name: voting-app-redis-container
+        - name: redis
           image: redis:alpine
           ports:
             - containerPort: 6379
